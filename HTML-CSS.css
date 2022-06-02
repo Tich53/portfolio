@@ -1,0 +1,52 @@
+body{
+    background-color: #fefee2
+}
+img{
+    width:200px;
+    border-right: solid 1px lightgray;
+
+
+}
+
+img:hover{
+    opacity: 0.75;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.grid-container-1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.image-portfolio{
+    width: 100%;
+}
+h1, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: center;
+    border: solid 2px lightgray;
+    color: rgb(131, 95, 29);
+}
+
+/*
+.sous-conteneur{
+    border: solid 1px;
+}

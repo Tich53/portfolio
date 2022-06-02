@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+    <title>Richard Douetté</title>
+    <meta name="description" content="Portfolio de Richard Douetté">
+</head>
+<body>
+    <header class="header">
+        <div id="mon-portfolio">
+        <h2>Portfolio <br> Richard Douetté</h2>
+        </div>  
+            <label for="checkbox-burger"><img id="icone-burger" src="images/bars-solid.svg" alt="Icone burger"></label>
+            <input type="checkbox" id="checkbox-burger">   
+        <nav>
+            <ul>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#projets-realises">Projets réalisés</a></li>
+                <li><a href="#etudes">Etudes</a></li>
+                <li><a href="#me-contacter">Contact</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <section class="section1">
+        <h1 id="presentation">Présentation</h1>
+        <img id="photo-richard" src="images/Richard_320x213(1).jpg" alt="Photo de Richard Douetté" title="Richard Douetté">
+        <p id="p-presentation"><em>"Cher visiteur, Bienvenue sur mon portfolio ! <br> Je suis actuellement en reconversion professionnelle pour devenir <strong>développeur web.</strong>
+            Ce qui me plaît dans ce métier : Trouver et concevoir des solutions utiles pour répondre à un besoin, à votre besoin !
+            <br> Continuez la visite pour en découvrir un peu plus sur moi et avoir un aperçu de mon savoir-faire.
+            <br>
+            Bonne visite !"</em></p>
+    </section>
+    <section class="section2">
+        <h1 id="projets-realises">Projets réalisés</h1>
+        <div class="display-flex-row">
+            <a href="HTML-CSS.html" target="_blank"><img class="icone-projet" src="images/icone-HTML-CSS.jpg" alt="Icone projet HTML" title="Projets HTML"></a>
+            <a href="Javascript.html" target="_blank"><img class="icone-projet" id="javascript" src="images/Icone-Javascript.png" alt="Icone Javascript" title="Projets Javascript"></a>
+            <a href="PHP.html" target="_blank"><img class="icone-projet" src="images/Icone-PHP.png" alt="Icone PHP" title="Projets PHP"></a>
+            <a href="MySQL.html" target="_blank"><img class="icone-projet" src="images/logo-mysql.png" alt="Icone MySQL" title="Icone MySQL"></a>
+            <a href="https://github.com/" target="_blank"><img class="icone-projet" src="images/git-logo-1.png" alt="Icone GitHub" title="Icone GitHub"></a>
+        </div>
+    </section>
+    <section class="section3">
+        <h1 id="etudes">Etudes</h1>
+        
+        <div class="conteneur-infos-personnelles">
+            <img id="photo-richard-etude" src="images/Logo-Donkey-School.png" alt="Photo de Richard Douetté" title="Richard Douetté">
+            <div class="label-infos-personnelles">
+                <p><strong>Nom:</strong></p>
+                <p><strong>Prénom:</strong></p>
+                <p><strong>Age:</strong></p>
+                <p><strong>@:</strong></p>
+                <p><strong>Tel:</strong></p>
+            </div>
+            <div class="infos-personnelles">
+                <p>Douetté</p>
+                <p>Richard</p>
+                <p>33 ans</p>
+                <p>rdouette@yahoo.fr</p>
+                <p>06 95 93 68 12</p>
+            </div>            
+        </div>
+            <p class="parcours"><strong><u>Du 16/05/2022 à aujourd'hui:</u></strong><br>En cours de formation de <strong>développeur web et web mobile</strong><em>(titre RNCP équivalent à un bac+2)</em> avec l'organisme <strong>Donkey School</strong>.</p>
+            <a target="_blank" class="cv-link" href="documents/CV_Richard_Douetté.pdf">Cliquez ici pour télécharger mon CV complet</a>
+    </section>
+    <section class="section2">
+        
+            <div  class="form-image">
+                <div>
+                    <img class="image-formulaire" src="images/Formulaire-1.png" alt="Formulaire">
+                </div>   
+                <form class="form">
+                        <h1 id="me-contacter">Me contacter</h1>
+                        <label for="nom-et-prénom">Nom et prénom:</label>
+                        <input type="text" id="nom-et-prénom" required autofocus>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" required></textarea>
+                        <button type="submit">Envoyer</button>
+                </form> 
+            </div>
+    </section>
+    <footer class="footer">
+        <a target="_blank" href="https://www.linkedin.com/feed/"><img class="icone-footer" src="images/Icone-linkedin.png" alt="Lien linkedin Richard Douetté"></a>
+        <a href="#mon-portfolio"><img class="icone-footer2" src="images/house-user-solid.svg" alt="Retour au menu" title="Retour au menu"></a>
+    </footer>
+
+</body>
+</html>

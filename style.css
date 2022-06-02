@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #fefee2;
+    line-height: 1.5;
+}
+
+section{
+    min-height: 200px;
+    padding-bottom: 50px;
+}
+
+.header{
+    background-image: url(images/Background-sobre_800x450.jpg);
+    max-width: 100%;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 
+}
+
+#mon-portfolio{
+    font-size: larger;
+    color: #fefee2;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Format icone burger*/
+#icone-burger{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    
+}
+
+/*Mise en plase d'une checkbox cachée pour que le contenu reste à l'affichage une fois cochée*/
+#checkbox-burger{
+    display: none;
+}
+
+/*Cache la navigation tant que la checkbox n'est pas cochée*/
+#checkbox-burger + nav{
+    display: none;
+}
+
+/*Une fois cochée, la navigation apparaît*/
+#checkbox-burger:checked + nav{
+    display: block;
+}
+
+nav ul{
+    position: absolute;
+    top: 60px;
+    right: 13px;
+    
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    
+}
+
+nav li a:hover{
+    border-bottom: solid 1px;
+    background-color: rgb(207, 152, 49);
+
+}
+
+.section1{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#photo-richard{
+    filter: grayscale(1);
+    max-width: 80%;
+    
+}
+
+#p-presentation{
+    font-family: 'Satisfy', Arial, Helvetica, sans-serif, cursive;
+    font-size: larger;
+    text-align: center;
+    line-height: 2;
+}
+
+.section2{
+    background-color: rgb(247, 225, 186);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px;
+}
+
+.display-flex-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width:80%;
+}
+
+.icone-projet{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: solid 1px gray;
+    margin-top: 20px;
+    box-shadow:8px 8px 0px gray;
+
+}
+
+.icone-projet:hover{
+    opacity: 0.5;
+}
+
+#javascript{
+    background: white;
+
+}
+
+.section3{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#etudes{
+    text-align: center;
+
+}
+
+.conteneur-infos-personnelles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#photo-richard-etude{
+    width: 140px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.label-infos-personnelles{
+    font-size: small;
+}
+
+.infos-personnelles{
+    font-size: small;
+}
+
+.parcours{
+    font-size: x-small;
+    margin-top: 40px;
+}
+
+ 
+.cv-link{
+    text-align: center;
+    color: black;
+    font-size: x-small;
+    margin-top: 20px;
+}
+
+.cv-link:visited{
+    color: black;
+}
+
+.cv-link:hover{
+    color: orange;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+   
+#nom-et-prénom{
+    margin-bottom: 15px;
+    border-radius: 5%;
+    border: ridge 3px orange;
+    padding: 5px;
+}
+
+#email{
+    margin-bottom: 15px;
+    border-radius: 5%;
+    border: ridge 3px orange;
+    padding: 5px;
+}
+
+#message{
+   
+    height : 300px;
+    margin-bottom: 15px;
+    border-radius: 5%;
+    border: ridge 3px orange;
+    padding: 5px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button{
+    padding: 5px;
+    border: ridge 3px orange;
+    font-weight: bold;
+}
+
+
+.image-formulaire{
+    display: none;
+}
+
+
+.icone-footer{
+    width: 40px;
+    height: 40px;
+    background: white;
+    margin-top: 5px;
+    position: absolute;
+    right: 10px;
+
+}
+
+.icone-footer:hover{
+    opacity: 0.5;
+}
+
+.icone-footer2{
+    width: 40px;
+    height: 40px;
+    background: white;
+    margin-top: 5px;
+    position: absolute;
+    left: 10px;
+
+}
+
+.footer{
+    height: 10vh;
+}
+
+
+@media screen and (min-width: 700px) {
+
+.header{
+    background-image: url(images/Background-sobre_800x450.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+#mon-portfolio{
+    font-size: xx-large;
+    color: #fefee2;
+    text-align: center;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+#icone-burger{
+    display: none;
+}
+
+/*Une fois cochée, la navigation apparaît*/
+#checkbox-burger:not(checked) + nav{
+    display: flex;
+    justify-content: center;
+}
+
+/* Mets le menu à l'horizontal avec un espacement de 20px entre chaque lien*/
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+nav ul{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-size: xx-large;
+}
+
+nav li a{
+    /*margin-right: 15px;*/
+    font-size:xx-large;
+}
+
+section{
+    height:100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo-richard{
+    margin: 20px;
+}
+
+#p-presentation{
+    font-size: x-large;
+    text-align: center;
+}
+
+.icone-projet{
+    width: 200px;
+    height: 200px;
+    background: white;
+    border: solid 1px gray;
+    margin-top: 20px;
+}
+
+#photo-richard-etude{
+    width: 270px;
+    height: 190px;
+    margin-right: 5px;
+}
+
+.parcours{
+    font-size: large;
+}
+
+.label-infos-personnelles{
+    font-size:large ;
+}
+
+.infos-personnelles{
+    font-size: large;
+}
+
+.cv-link{
+    font-size: large;
+    margin-top: 40px;
+
+}
+
+
+.image-formulaire{
+    display: block;
+    margin-right: 50px;
+    width: 200px;
+
+}
+
+.form-image{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+#nom-et-prénom{
+    margin-bottom: 15px;
+    width:400px
+}
+
+#email{
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+#message{
+    width: 400px;
+    height : 300px;
+    margin-bottom: 15px;
+}
+
+.icone-projet{
+    margin: 20px;
+    
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+button{
+    width: 30%;
+    align-self: flex-end;
+}
+
+
+}

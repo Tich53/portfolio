@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/Background-sobre.jpg);
+}
+
+.p{
+    animation: message 15s ease-in infinite reverse;
+    color: #fefee2;
+}
+
+@keyframes message {
+    0%{
+        transform:translatex(-50%)
+    }
+    100%{
+        transform:translatex(300%)
+    }
+}
+
+.alignement{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
